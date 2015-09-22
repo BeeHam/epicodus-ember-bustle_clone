@@ -1,11 +1,9 @@
 {{yield}}
 
-<li><img src={{article.image}}> {{article.title}} {{action 'showArticle'}}
+<li><img src={{article.image}} {{action 'showArticle'}}> {{article.title}}
   {{#if isArticleShowing}}
-    <p>
-      {{article.content}}
-    </p>
+    <p>{{article.content}}</p>
   {{else}}
-    <button {{action 'hideArticle'}}>Hide Article</button>
+    <button  {{action 'hideArticle'}}>Hide Article</button>
   {{/if}}
 </li>
