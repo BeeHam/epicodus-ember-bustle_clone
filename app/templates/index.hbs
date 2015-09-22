@@ -1,6 +1,6 @@
 {{outlet}}
 <ul>
   {{#each model as |article|}}
-  <li>{{article.title}} <img src={{article.image}}></li>
+    {{article-tile article=article}}
   {{/each}}
 </ul>
